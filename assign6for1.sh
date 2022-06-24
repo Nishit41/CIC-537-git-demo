@@ -1,7 +1,8 @@
 #!/bin/bash -x
-a=2
-b=5
-
-c=`echo $a $b | awk '{print $1^$2}'`
-echo "$c"
-
+echo "enter n"
+read n
+for (( i=1;i<=n;i++ ))
+do
+x=$(( 2**i ))
+done
+echo "$x"
